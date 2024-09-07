@@ -51,8 +51,8 @@ const init = async () => {
         }
 
         authClient.authorize({
-          nonce: '',
-          state: '',
+          nonce: 'build-travel-app',
+          state: 'build-travel-app',
         });
       });
     }
