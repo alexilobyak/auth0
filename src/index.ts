@@ -9,6 +9,13 @@ import {
 } from './config.dev';
 // It should be loaded asynchronously so it doesn't affect page load times.
 const init = async () => {
+  console.log({
+    domain: AUTH0_DOMAIN,
+    clientID: AUTH_CLIENT_ID,
+    scope: AUTH0_USER_SCOPE,
+    redirectUri: AUTH0_LOGIN_REDIRECT_URL,
+    responseType: AUTH0_LOGIN_RESPONSE_TYPE,
+  });
   const authClient = new auth0.WebAuth({
     domain: AUTH0_DOMAIN,
     clientID: AUTH_CLIENT_ID,
